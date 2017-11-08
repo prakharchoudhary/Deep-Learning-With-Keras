@@ -1,4 +1,5 @@
 from __future__ import print_function
+import os
 import numpy as np
 from keras.datasets import mnist
 from keras.models import Sequential
@@ -6,6 +7,8 @@ from keras.layers.core import Dense, Activation
 from keras.optimizers import SGD
 from keras.utils import np_utils
 np.random.seed(1671)
+
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 
 # network and training
 NB_EPOCH = 20
