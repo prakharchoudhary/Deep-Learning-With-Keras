@@ -102,3 +102,11 @@ ENV/
 
 # data folders
 data/
+
+# images
+*.jpg
+*.jpeg
+*.png
+
+# embeddings
+*.bin
